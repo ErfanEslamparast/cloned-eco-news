@@ -180,6 +180,7 @@ input[type="text"], input[type="password"] {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    overflow-x: hidden;
 }
 nav.navbar{position: static;}
 .nav-container .navbar-brand{
@@ -1016,10 +1017,10 @@ footer .bottom-section .ggl-logo{
     /* Navbar Section */
     .nav-container .navbar-collapse{
         background: #212121;
-        
+        overflow-x: hidden;
     }
     .nav-container .navbar-collapse .navbar-nav{
-        width: 65rem;
+        width: 100vw;
         margin-right: 0;
     }
     .dropdown-menu {
