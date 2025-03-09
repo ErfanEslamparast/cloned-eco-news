@@ -35,20 +35,20 @@
     -ms-user-select: none;
 }
 #IranMap .map svg{
-    height: 360px!important;
-    width: 360px!important;
+    height: 347px!important;
+    width: 347px!important;
 }
 #IranMap .map .border path, #IranMap .map .island path{
-    fill: #fff;
+    fill: #999;
 }
 #IranMap .map .province path{
-    fill: #999;
+    fill: #ccc;
 }
 #IranMap .map .sea path, #IranMap .map .lake path{
     fill: #6caed8;
 }
 #IranMap .map .province path:hover, #IranMap .map .island path:hover, #IranMap .map .province path.hover, #IranMap .map .island path.hover{
-    fill: #c33a2c !important;
+    fill: #b71818 !important;
     cursor: pointer;
 }
 

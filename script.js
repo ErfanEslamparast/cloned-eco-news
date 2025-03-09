@@ -15,6 +15,28 @@ document.querySelectorAll('.dropdown-menu').forEach(item => {
     });
 });
 
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    const categoty = document.querySelector('#hidden')
+
+const observer = new MutationObserver(() => {
+    if (navbarCollapse.classList.contains('show')) {
+       categoty.style.display = 'none'
+} else {
+        navbarCollapse.style.transition = 'all .1s ease'
+        categoty.style.display = 'block'
+    }
+});
+
+observer.observe(navbarCollapse, { attributes: true, attributeFilter: ['class'] });
+
+
+    //hidden category when click on burger-menu زمانی که روی برگرمنو کلیک میشود کتگوری پایین(که زیر collapse) قرار داره نمایش داده میشود و کتگوری‌ای که بالا چسبیده مخفی میشود
+    // const navbarCollapse = document.querySelector('.navbar-collapse')
+    // const categoty = document.querySelector('#hidden')
+    // navbarCollapse.addEventListener('shown.bs.collapse', ()=>categoty.style.display = 'none')
+    // navbarCollapse.addEventListener('hidden.bs.collapse', ()=>categoty.style.display = 'block')
+
+
   // sliding categoreisby click
 
 const scrollContainer = document.querySelector('.scroll-navbar');
@@ -147,7 +169,7 @@ new Swiper(".myNewsSwiper", {
     autoplay: {
         delay: 3000,
     },
-    height:'26',
+    height:'24',
     speed: 800,
 });
 
