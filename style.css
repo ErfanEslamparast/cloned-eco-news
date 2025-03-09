@@ -1057,6 +1057,22 @@ section.news #carouselExampleIndicators .carousel-control-next{right: 99.5%;}
     padding: 12px;
     font-size: 16px;
     line-height: 1.34;
+    position: relative;
+ }
+ .special-news .news-container .news-thumbs .news-thumbs-box::after{
+    content: '';
+    height: 1px;
+    width: 92%;
+    background-color: #dfdfdd;
+    position: absolute;
+    bottom: 1px;
+    right: 50%;
+    transform: translateX(50%);
+ }
+ .special-news .news-container .news-thumbs .news-thumbs-box.no-border::after{
+    content: '';
+    height: 0;
+    width: 0;
  }
  .special-news .news-container .news-thumbs .news-thumbs-box .texts{
     overflow: hidden;
@@ -1317,23 +1333,10 @@ footer .bottom-section #lang{
     .dropdown.multimedia .dropdown-menu li
     {
         width: calc(100% / 2 - 2px);
-    }
-     /* .dropdown-item{
-        width: calc(50vw - 2px);
-    } */
+    }    
     .dropdown.free-zones .dropdown-menu .dropdown-item img{
         margin: 0 auto;
     }
-    
-    /* .categoreis-container{
-        transform: translateY(var(--collapse-height));
-    }
-    
-    .categoreis-container {
-        position: relative;
-        transition: transform 0.3s ease;
-    } */
-
     /* News Section */
     .recent-news .heading{
         margin-top: 0;
@@ -1352,7 +1355,10 @@ footer .bottom-section #lang{
     .special-news .news-container {
         height: 16.8rem;
     }
-    .special-news .news-container > *{width: 32%;}
+    .special-news .news-container > *{
+        width: 32%;
+        padding: 0;
+    }
      .special-news .news-container .news-list{
         height: 100%;
         overflow: hidden;
