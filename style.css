@@ -307,6 +307,9 @@ nav.navbar{position: static;}
     display: flex;
     flex-wrap: wrap;
 }
+.dropdown.proviences .dropdown-menu ul li{
+    margin: 2px 0;
+}
 .dropdown.proviences .dropdown-menu ul li,
 .dropdown.rates .dropdown-menu li{
     width: calc(100% / 6 - 2px);
