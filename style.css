@@ -518,6 +518,9 @@ section.news .recent-news ul, section.news .tags{
     border: solid #dfdfdd;
     border-width:  0 0 .8px .8px;
 }
+section.news .main-news{
+    border-width: .8px;
+}
 section.news .recent-news ul{
     border-top: 3px solid var(--main-color);
 }
