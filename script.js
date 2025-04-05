@@ -15,19 +15,19 @@ document.querySelectorAll('.dropdown-menu').forEach(item => {
     });
 });
 
-    const navbarCollapse = document.querySelector('.navbar-collapse');
-    const categoty = document.querySelector('#hidden')
+//     const navbarCollapse = document.querySelector('.navbar-collapse');
+//     const categoty = document.querySelector('#hidden')
 
-const observer = new MutationObserver(() => {
-    if (navbarCollapse.classList.contains('show')) {
-       categoty.style.display = 'none'
-} else {
-        navbarCollapse.style.transition = 'all .1s ease'
-        categoty.style.display = 'block'
-    }
-});
+// const observer = new MutationObserver(() => {
+//     if (navbarCollapse.classList.contains('show')) {
+//        categoty.style.display = 'none'
+// } else {
+//         navbarCollapse.style.transition = 'all .1s ease'
+//         categoty.style.display = 'block'
+//     }
+// });
 
-observer.observe(navbarCollapse, { attributes: true, attributeFilter: ['class'] });
+// observer.observe(navbarCollapse, { attributes: true, attributeFilter: ['class'] });
 
 
     //hidden category when click on burger-menu زمانی که روی برگرمنو کلیک میشود کتگوری پایین(که زیر collapse) قرار داره نمایش داده میشود و کتگوری‌ای که بالا چسبیده مخفی میشود
@@ -39,18 +39,21 @@ observer.observe(navbarCollapse, { attributes: true, attributeFilter: ['class'] 
 
   // sliding categoreisby click
 
-const scrollContainer = document.querySelector('.scroll-navbar');
-    const scrollLeftBtn = document.querySelector('.scroll-btn.left');
-    const scrollRightBtn = document.querySelector('.scroll-btn.right');
-
+    const scrollContainer = document.querySelector('.scroll-navbar');
+    const scrollLeftBtn = document.querySelector('#scrollLeftBtn');
+    const scrollRightBtn = document.querySelector('#scrollRightBtn');
+    
     scrollLeftBtn.addEventListener('click', () => {
+
         scrollContainer.scrollBy({
             left: -100,
             behavior: 'smooth'
         });
+        
     });
 
     scrollRightBtn.addEventListener('click', () => {
+        
         scrollContainer.scrollBy({
             left: 100,
             behavior: 'smooth'
@@ -174,3 +177,22 @@ new Swiper(".myNewsSwiper", {
 });
 
 });
+// google translate init
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+        { pageLanguage: 'fa', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false },
+        'google_translate_element'
+    );
+}
+// stop refreshing when click on google element
+function stopRefreshOnTranslate() {
+    const googleTranslateDropdown = document.querySelector('#google_translate_element');
+    if (googleTranslateDropdown) {
+        googleTranslateDropdown.addEventListener('click', function(event) {
+            event.preventDefault();
+        });
+    }
+}
+
+
+stopRefreshOnTranslate()
