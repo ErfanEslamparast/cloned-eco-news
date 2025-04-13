@@ -35,8 +35,8 @@
     -ms-user-select: none;
 }
 #IranMap .map svg{
-    height: 347px!important;
-    width: 347px!important;
+    height: 297px!important;
+    width: 297px!important;
 }
 #IranMap .map .border path, #IranMap .map .island path{
     fill: #999;
