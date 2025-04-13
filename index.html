@@ -29,7 +29,7 @@
             });
         });
     </script>
-
+    <link rel="shortcut icon" href="images/favicon.png">
     <title>Economic News Agency | خبرگزاری اقتصادی ایران</title>
 </head>
 
@@ -38,7 +38,7 @@
 
         <!-- Top Menu Section -->
         <div class="container-fluid container-md  top-menu">
-            <div class="right-side col-6">
+            <div class="right-side col-6 col-xl-4">
                 <div class="date-and-time d-none d-md-flex align-items-center">
                     <i class="fa-solid fa-calendar-days me-1"></i>
                     <span>دوشنبه ۸ بهمن ۱۴۰۲ </span>
@@ -47,7 +47,7 @@
                 </div>
                 <div class="signin-up-section position-relative">
                     <button class="signin-up-btn" type="button" data-bs-toggle="collapse" data-bs-target="#signin-up-form">
-                        <i class="fa-solid fa-user" style="font-size: 13px;"></i>
+                        <i class="fa-solid fa-user" style="font-size: 12px;"></i>
                         ورود/عضویت
                         <i class="fa-solid fa-angle-down" style="font-size: 13px;"></i>
                     </button>
@@ -70,7 +70,7 @@
                         </div>
                 </div>
             </div>
-            <div class="left-side col-6 d-flex align-items-center">
+            <div class="left-side col-6 col-xl-8 d-flex align-items-center">
                 <div class="sliding-menu-container d-md-none d-xl-block ms-auto ">
                     <ul>
                         <li><a href="#">
@@ -111,7 +111,7 @@
                             </a></li>
                     </ul>
                 </div>
-                <div class="search-box d-none d-md-flex ms-auto ps-2">
+                <div class="search-box d-none d-md-flex ms-auto ms-xl-0 ps-2">
                     <div class="d-flex align-items-center">
                         <input type="text" placeholder="جستجو ...">
                         <i class="fa-solid fa-magnifying-glass"></i>
@@ -122,7 +122,7 @@
 
         <!-- Navbar Section -->
         <div class="container-fluid nav-container position-relative d-block">
-            <nav class="container-fluid container-md navbar navbar-expand-lg navbar-dark">
+            <nav class="container-fluid container-lg navbar navbar-expand-lg navbar-dark">
                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -138,8 +138,8 @@
                                 </a>
                                 <ul class="dropdown-menu justify-content-lg-center" aria-labelledby="newsMenu">
                                     <div class="row container-md">
-                                        <div class="col-12 col-lg-4">
-                                            <h6 class="text-center text-sm-center py-2">دسته‌بندی عمومی</h6>
+                                        <div class="col-12 col-lg-4 pe-2">
+                                            <h6 class="text-center text-sm-center ">دسته بندی عمومی</h6>
                                             <ul class="d-flex flex-wrap">
                                                 <div class="col-6">
                                                     <li><a class="dropdown-item text-white" href="#">عناوین کل سرویس</a>
@@ -161,8 +161,8 @@
                                                 </div>
                                             </ul>
                                         </div>
-                                        <div class="col-12 col-lg-4">
-                                            <h6 class="text-center py-2">دسته‌بندی تخصصی اقتصاد</h6>
+                                        <div class="col-12 col-lg-4 px-2">
+                                            <h6 class="text-center ">دسته بندی تخصصی اقتصاد</h6>
                                             <ul class="d-flex flex-wrap">
                                                 <div class="col-4">
                                                     <li><a class="dropdown-item text-white" href="#">عناوین کل سرویس</a>
@@ -194,9 +194,8 @@
                                                 </div>
                                             </ul>
                                         </div>
-    
-                                        <div class="col-12 col-lg-4">
-                                            <h6 class="text-center py-2">دسته‌بندی ویژه</h6>
+                                        <div class="col-12 col-lg-4 ps-2">
+                                            <h6 class="text-center ">دسته بندی ویژه</h6>
                                             <ul class="d-flex flex-wrap">
                                                 <div class="col-6">
                                                     <li><a class="dropdown-item text-white" href="#">عناوین کل سرویس</a>
@@ -366,27 +365,32 @@
                                    </div>
                                 </ul>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="#" id="ratesMenu" role="button">
+                            <li class="nav-item requierments dropdown">
+                                <a class="nav-link dropdown-toggle text-light" href="#" id="ratesMenu" role="button">
                                     نیازمندی‌ ها
                                 </a>
                             </li>
-                            <li class="nav-item d-md-none">
-                                <a class="nav-link text-white" href="#"> <i class="fa-solid fa-magnifying-glass"
+                            <li class="nav-item search dropdown d-md-none">
+                                <a class="nav-link dropdown-toggle text-white" href="#"> <i class="fa-solid fa-magnifying-glass"
                                         style='margin-left:0.2rem'></i>جستجو</a>
                             </li>
                         </ul>
                     </div>
                 
                 <a class="navbar-brand col-3 ms-auto" href="#"><img src="./images/kh.jpg" class="img-fluid"
-                    style="width: 90%;"></a>
+                    style="width: 83%;"></a>
             </nav>
         </div>
 
         <!-- Categoreis Section -->
         <div id="hidden" class=" categoreis-container container-fluid position-relative">
+
+          <div class="container-fluid container-md position-relative w-100 h-100">
+            <div id="scrollRightBtn" class="scroll-btn right"><i class="fa-solid fa-chevron-right"></i></div> 
+            <div id="scrollLeftBtn" class="scroll-btn left"><i class="fa-solid fa-chevron-left"></i></div>   
+          </div>
+            
             <div class="scroll-bar-container container-fluid container-md d-flex align-items-center">
-                <div id="scrollRightBtn" class="scroll-btn right"><i class="fa-solid fa-chevron-right"></i></div>               
                 <ul class="scroll-navbar container-md">
                 <li class="category-item" data-color="#cecece"><a href="#" class="first-icon"><i class="fa-solid fa-bars"></i></a></li>
 
@@ -852,7 +856,7 @@
                 <li class="category-item" data-color="#BB0000"> <a href="#">اخبار شرکت‌ها</a></li>
 
                 </ul>
-                <div id="scrollLeftBtn" class="scroll-btn left"><i class="fa-solid fa-chevron-left"></i></div>
+                
             </div>
         </div>
         <!-- End Of Categoreis Section -->
@@ -870,7 +874,7 @@
                 <div class="row d-flex justify-content-between">
                     <div class="col-12">
                         <div class="row fs-5 news-top d-flex align-items-center justify-content-between">
-                            <div class="col-9 d-flex align-items-center fs-6 mt-1 ps-1">
+                            <div class="col-9 d-flex align-items-center fs-6 ps-2">
                                 <span class="me-1 d-none d-md-flex">سرخط اخبار: </span>
                                 <div class="swiper myNewsSwiper">
                                     <div class="swiper-wrapper">
@@ -893,7 +897,7 @@
                     <div class="col-12">
                         <div class="row news-middle fs-4">
                             <div class="col-12 col-md-9 col-lg-6 right-side pe-md-2">
-                                <div class="main-news position-relative bg-white mb-1 p-1">
+                                <div class="main-news position-relative bg-white">
                                     <div class="main-news-image-container position-relative overflow-hidden w-100">
                                         <img class="news-image img-fluid w-100" src="./images/news-section/kartal.jpg">
                                         <div class="dark-shadow"></div>
@@ -902,19 +906,27 @@
                                     <div class="news-title text-white">مذاکره پرسپولیس با مهاجم ترکی-آلمانی</div>
                                 </div>
                                 <div class="thumbs d-md-flex">
-                                    <div class="first-thumb d-flex align-items-center bg-white p-1 mb-2 me-1" >
+                                    <div class="first-thumb pe-2" >
+                                      <a href="">
+                                       <div class="content d-flex align-items-center bg-white">
                                         <div class="news-image-container overflow-hidden"><img class="news-image img-fluid " src="./images/news-section/thumb1.jpg"></div>
                                         <div class="news-title ">گزینه اصلی جانشینی دنیامالی مشخص شد</div>
+                                       </div>
+                                      </a>
                                     </div>
-                                    <div class="second-thumb d-flex align-items-center bg-white p-1 mb-2">
-                                        <div class="news-image-container overflow-hidden"><img class="news-image img-fluid " src="./images/news-section/thumb2.jpg"></div>
-                                        <div class="news-title">پیشنهاد ۵۰۰ هزار دلاری پرسپولیس به مهاجم عراقی</div>
+                                    <div class="second-thumb ps-2">
+                                      <a href="">
+                                        <div class="content d-flex align-items-center bg-white">
+                                            <div class="news-image-container overflow-hidden"><img class="news-image img-fluid " src="./images/news-section/thumb2.jpg"></div>
+                                            <div class="news-title">پیشنهاد ۵۰۰ هزار دلاری پرسپولیس به مهاجم عراقی</div>
+                                        </div>
+                                      </a>
                                     </div>
                                 </div>
                             </div>
                             <div class=" recent-news col-12 col-md-3 d-md-none d-lg-block  middle-side px-md-2">
                                 <div class="heading d-flex align-items-center">
-                                    <i class="fa-solid fa-bookmark me-1 mt-2"></i>تازه های <span class="ms-1">اقتصاد</span>
+                                    <i class="fa-solid fa-bookmark me-1"></i>تازه های <span class="ms-1">اقتصاد</span>
                                 </div>
                                 <ul class="h6 bg-white mb-0 pb-2 overflow-hidden">
                                     <li><a href="#">اخلاقی: کشتی فرنگی از تک قطبی خارج شده است</a></li>
@@ -1005,7 +1017,7 @@
             </button>
           </div>
 
-        <div class="row news-subjects d-flex justify-content-center flex-nowrap gap-3 mt-2 ">
+        <div class="row news-subjects d-flex justify-content-center flex-nowrap gap-3 mt-3 ">
             <div class="col menu-item position-relative text-center active" data-color="#B22222"  ><span>اقتصاد</span></div>
             <div class="col menu-item position-relative text-center" data-color="#3300CC"  ><span>سیاست</span></div>
             <div class="col menu-item position-relative text-center" data-color="#0040AD"  ><span>فرهنگ</span></div>
@@ -2207,68 +2219,68 @@
                     <div class="heading d-flex justify-content-between align-items-center"> <span><i
                                 class="fa-solid fa-comment" style="font-size: 80%;"></i>گفتگو</span> <a href="#">اطلاعات
                             بیشتر</a></div>
-                    <div class="news bg-white d-flex p-2">
+                    <a class="news bg-white d-flex">
                         <div class="news-img overflow-hidden "><img src="./images/small-news/63013399-1738125196.jpg"></div>
                         <div class="news-title ps-2">
                             <h6 class="text-muted">کارشناس اقتصادی:</h6>
                             <p>تک نرخی شدن ارز به ضرر واسطه‌ها تمام شد </p>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="small-news-box col-12 col-md-4 px-md-2 mb-2" data-color="#6A5ACD">
                     <div class="heading d-flex justify-content-between align-items-center"> <span><i
                                 class="fa-regular fa-file-lines" style="font-size: 80%;"></i>یادداشت</span> <a
                             href="#">اطلاعات بیشتر</a></div>
-                    <div class="news bg-white d-flex p-2">
+                    <a class="news bg-white d-flex">
                         <div class="news-img overflow-hidden "><img src="./images/small-news/171552969-1737795525.jpg"></div>
                         <div class="news-title ps-2">
                             <p>برای خروج از این وضعیت چه باید کرد؟ </p>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="small-news-box col-12 col-md-4 px-md-2 mb-2" data-color="#00BFFF">
                     <div class="heading d-flex justify-content-between align-items-center"> <span><i
                                 class="fa-brands fa-twitter" style="font-size: 80%;"></i>توئیت</span> <a
                             href="#">اطلاعات بیشتر</a></div>
-                    <div class="news bg-white d-flex p-2">
+                    <a class="news bg-white d-flex">
                         <div class="news-img overflow-hidden "><img src="./images/small-news/971149852292405.jpg"></div>
                         <div class="news-title ps-2">
                             <p>بقائی: نمی توان فلسطینیان را وادار به کوچ کرد</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="small-news-box col-12 col-md-4 pe-md-2 mb-2" data-color="#DC143C">
                     <div class="heading d-flex justify-content-between align-items-center"> <span><i
                                 class="fa-brands fa-instagram" style="font-size: 80%;"></i>اینستاگرام</span> <a
                             href="#">اطلاعات بیشتر</a></div>
-                    <div class="news bg-white d-flex p-2">
+                    <a class="news bg-white d-flex">
                         <div class="news-img overflow-hidden "><img src="./images/small-news/mhmd-kho-hrh-1738493002.jpg"></div>
                         <div class="news-title ps-2">
                             <p>عوامل شکست خصوصی‌سازی در ایران چه بود </p>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="small-news-box col-12 col-md-4 px-md-2 mb-2" data-color="#BA55D3">
                     <div class="heading d-flex justify-content-between align-items-center"> <span><i
                                 class="fa-solid fa-folder" style="font-size: 80%;"></i>پرونده</span> <a href="#">اطلاعات
                             بیشتر</a></div>
-                    <div class="news bg-white d-flex p-2">
+                    <a class="news bg-white d-flex">
                         <div class="news-img overflow-hidden "><img src="./images/small-news/711020100447866.jpg"></div>
                         <div class="news-title ps-2">
                             <p>موانع اقتصادی در نقش ژئوپلتیکی پاکستان </p>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="small-news-box col-12 col-md-4 px-md-2 mb-2" data-color="#228B22">
                     <div class="heading d-flex justify-content-between align-items-center"> <span><i
                                 class="fa-solid fa-book-open" style="font-size: 80%;"></i>پزوهش</span> <a
                             href="#">اطلاعات بیشتر</a></div>
-                    <div class="news bg-white d-flex p-2">
+                    <a class="news bg-white d-flex">
                         <div class="news-img overflow-hidden "><img src="./images/small-news/431425643463929.jpg"></div>
                         <div class="news-title ps-2">
                             <p>بار «ترویج علم» به دوش اساتید است یا صداوسیما؟ </p>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -2349,15 +2361,15 @@
             <div class="news-list col-12 col-md-4 col-lg-3 ">
                 <div class="content">
                     <ul>
-                        <li>FATF معجزه نخواهد کرد!</li>
-                        <li>چگونه تحریم‌ها را خنثی کنیم؟</li>
-                        <li>توصیه های FATF در متن قانون مبارزه با پولشویی کشور وجود دارد</li>
-                        <li>آخرین مهلت ثبت اظهارنامه مالیات بر ارزش‌افزوده مؤدیان اعلام شد</li>
-                        <li>خصوصی سازی ناقص به اقتصاد ایران ضربه زد</li>
-                        <li>سرمایه گذاری خارجی باید منتهی به انتقال پول و تکنولوژی شود</li>
-                        <li>اتمام خط آهن چابهار- زاهدان تا پایان سال آینده</li>
-                        <li>روادید بین ایران و تاجیکستان لغو شد</li>
-                        <li>ترخیص درصدی کالاهای بخش کشاورزی ابلاغ شد+ جدول</li>
+                        <li><a href="#">FATF معجزه نخواهد کرد!</a></li>
+                        <li><a href="#">چگونه تحریم‌ها را خنثی کنیم؟</a></li>
+                        <li><a href="#">توصیه های FATF در متن قانون مبارزه با پولشویی کشور وجود دارد</a></li>
+                        <li><a href="#">آخرین مهلت ثبت اظهارنامه مالیات بر ارزش‌افزوده مؤدیان اعلام شد</a></li>
+                        <li><a href="#">خصوصی سازی ناقص به اقتصاد ایران ضربه زد</a></li>
+                        <li><a href="#">سرمایه گذاری خارجی باید منتهی به انتقال پول و تکنولوژی شود</a></li>
+                        <li><a href="#">اتمام خط آهن چابهار- زاهدان تا پایان سال آینده</a></li>
+                        <li><a href="#">روادید بین ایران و تاجیکستان لغو شد</a></li>
+                        <li><a href="#">ترخیص درصدی کالاهای بخش کشاورزی ابلاغ شد+ جدول</a></li>
     
                     </ul>
                 </div>
@@ -2440,15 +2452,15 @@
             <div class="news-list col-12 col-md-4 col-lg-3 ">
                 <div class="content">
                     <ul>
-                        <li>جمعه ۱۹ بهمن ساعت ۲۳ آخرین فرصت برای خرید سکه در حراجی بانک مرکزی</li>
-                        <li>رونق میلیون دلاری بازار ارز تجاری مرکز مبادله ایران ادامه دارد</li>
-                        <li>تراز ۲ میلیون و ۸۰۰ هزار واحدی شاخص کل، آوردگاه فروشندگان و خریداران</li>
-                        <li>دو پیش نیاز خصوصی سازی واقعی در اقتصاد ایران</li>
-                        <li>خصوصی سازی ناقص موجب کاهش بهره وری شد</li>
-                        <li>باخصوصی سازی ناقص بهره وری کاهش یافت</li>
-                        <li>افت ۱۲۴۵۹ واحدی شاخص کل و آنچه البته به جایی نرسد فریاد است</li>
-                        <li>گزارش عملیات بازار باز منتهی به ۱۵ بهمن ۱۴۰۳</li>
-                        <li>بخشنامه‌ جدید بیمه مرکزی در حمایت از خسارت دیدگان</li>
+                        <li><a href="#">جمعه ۱۹ بهمن ساعت ۲۳ آخرین فرصت برای خرید سکه در حراجی بانک مرکزی</a></li>
+                        <li><a href="#">رونق میلیون دلاری بازار ارز تجاری مرکز مبادله ایران ادامه دارد</a></li>
+                        <li><a href="#">تراز ۲ میلیون و ۸۰۰ هزار واحدی شاخص کل، آوردگاه فروشندگان و خریداران</a></li>
+                        <li><a href="#">دو پیش نیاز خصوصی سازی واقعی در اقتصاد ایران</a></li>
+                        <li><a href="#">خصوصی سازی ناقص موجب کاهش بهره وری شد</a></li>
+                        <li><a href="#">باخصوصی سازی ناقص بهره وری کاهش یافت</a></li>
+                        <li><a href="#">افت ۱۲۴۵۹ واحدی شاخص کل و آنچه البته به جایی نرسد فریاد است</a></li>
+                        <li><a href="#">گزارش عملیات بازار باز منتهی به ۱۵ بهمن ۱۴۰۳</a></li>
+                        <li><a href="#">بخشنامه‌ جدید بیمه مرکزی در حمایت از خسارت دیدگان</a></li>
                     </ul>
                 </div>
             </div>
@@ -2527,16 +2539,16 @@
             <div class="news-list col-12 col-md-4 col-lg-3 ">
                 <div class="content">
                     <ul>
-                        <li>واکنش نماینده سعودی به طرح ترامپ و نتانیاهو؛ صهیونیست‌ها را به آلاسکا و گرینلند منتقل کنید</li>
-                        <li>وحشت رژیم صهیونیستی از شادی فلسطینی‌ها برای آزاد شدن اسرا</li>
-                        <li>۷۵ درصد زیرساخت‌های بهداشتی غزه نابود شده است/ صهیونیست‌ها چگونه بیمارستان‌ها را به ویرانه تبدیل کردند؟</li>
-                        <li>خشم لبنانی‌ها از مداخله‌جویی‌های یک مقام آمریکایی</li>
-                        <li>تشدید اختلافات در سوریه؛ نیروهای «قسد»: هرگز سلاح خود را تحویل نخواهیم داد</li>
-                        <li>شعله‌ور شدن اعتراضات سراسری در اردن علیه طرح خطرناک ترامپ</li>
-                        <li>حماس: ملت فلسطین تسلیم توهمات ترامپ نخواهد شد</li>
-                        <li>۷۵ درصد زیرساخت‌های بهداشتی غزه نابود شده/ صهیونیست‌ها چگونه بیمارستان‌ها را به ویرانه تبدیل کردند؟</li>
-                        <li>خشم لبنانی‌ها نسبت به مداخله‌جویی‌های یک مقام آمریکایی</li>
-                    </ul>
+                        <li><a href="#">واکنش نماینده سعودی به طرح ترامپ و نتانیاهو؛ صهیونیست‌ها را به آلاسکا و گرینلند منتقل کنید</a></li>
+                        <li><a href="#">وحشت رژیم صهیونیستی از شادی فلسطینی‌ها برای آزاد شدن اسرا</a></li>
+                        <li><a href="#">۷۵ درصد زیرساخت‌های بهداشتی غزه نابود شده است/ صهیونیست‌ها چگونه بیمارستان‌ها را به ویرانه تبدیل کردند؟</a></li>
+                        <li><a href="#">خشم لبنانی‌ها از مداخله‌جویی‌های یک مقام آمریکایی</a></li>
+                        <li><a href="#">تشدید اختلافات در سوریه؛ نیروهای «قسد»: هرگز سلاح خود را تحویل نخواهیم داد</a></li>
+                        <li><a href="#">شعله‌ور شدن اعتراضات سراسری در اردن علیه طرح خطرناک ترامپ</a></li>
+                        <li><a href="#">حماس: ملت فلسطین تسلیم توهمات ترامپ نخواهد شد</a></li>
+                        <li><a href="#">۷۵ درصد زیرساخت‌های بهداشتی غزه نابود شده/ صهیونیست‌ها چگونه بیمارستان‌ها را به ویرانه تبدیل کردند؟</a></li>
+                        <li><a href="#">خشم لبنانی‌ها نسبت به مداخله‌جویی‌های یک مقام آمریکایی</a></li>
+                      </ul>
                 </div>
             </div>
             <div class="main-news-left col-12 col-md-4 col-lg-3">
@@ -2616,16 +2628,16 @@
             <div class="news-list col-12 col-md-4 col-lg-3 ">
               <div class="content">
                 <ul>
-                    <li>نصب سیستم کنترل هوشمند در ۲۰ پالایشگاه و پتروشیمی؛ دانش بنیان‌ها ۴۰ درصد نیاز روسیه را تامین کردند</li>
-                    <li>از تولید رادیو داروی بومی برای تشخیص سرطان تا بومی سازی فناوری در صنعت برق</li>
-                    <li>آغاز ثبت‌نام پژوهشگران پسادکتری فناوری از فردا</li>
-                    <li>۶۸ شرکت گواهی کارگزاری تجارت فناوری دریافت کردند</li>
-                    <li>رونمایی از ۲ ماده اولیه پرمصرف دارویی؛ از درمان آرتروز تا کاربرد در مزوژل‌های زیبایی</li>
-                    <li>سهم هوش‌مصنوعی در فهرست کالا و خدمات دانش‌بنیان بررسی شد</li>
-                    <li>پهپاد کامیکازه به شکل توپ راگبی</li>
-                    <li>پارک فناوری دانشگاه امیرکبیر واحد فناور و استارت اپی جذب می‌کند</li>
-                    <li>ماهواره هندی در فضا سرگردان شد</li>
-                </ul>
+                    <li><a href="#">نصب سیستم کنترل هوشمند در ۲۰ پالایشگاه و پتروشیمی؛ دانش بنیان‌ها ۴۰ درصد نیاز روسیه را تامین کردند</a></li>
+                    <li><a href="#">از تولید رادیو داروی بومی برای تشخیص سرطان تا بومی سازی فناوری در صنعت برق</a></li>
+                    <li><a href="#">آغاز ثبت‌نام پژوهشگران پسادکتری فناوری از فردا</a></li>
+                    <li><a href="#">۶۸ شرکت گواهی کارگزاری تجارت فناوری دریافت کردند</a></li>
+                    <li><a href="#">رونمایی از ۲ ماده اولیه پرمصرف دارویی؛ از درمان آرتروز تا کاربرد در مزوژل‌های زیبایی</a></li>
+                    <li><a href="#">سهم هوش‌مصنوعی در فهرست کالا و خدمات دانش‌بنیان بررسی شد</a></li>
+                    <li><a href="#">پهپاد کامیکازه به شکل توپ راگبی</a></li>
+                    <li><a href="#">پارک فناوری دانشگاه امیرکبیر واحد فناور و استارت اپی جذب می‌کند</a></li>
+                    <li><a href="#">ماهواره هندی در فضا سرگردان شد</a></li>
+                  </ul>
               </div>
             </div>
             <div class="main-news-left col-12 col-md-4 col-lg-3">
@@ -2704,16 +2716,16 @@
             <div class="news-list col-12 col-md-4 col-lg-3 ">
                 <div class="content">
                     <ul>
-                        <li>کتاب «چیستی تمدن» منتشر می شود</li>
-                        <li>۲۰ بهمن؛ درگیری مسلحانه در دوشان تپه و سخنرانی بازرگان در دانشگاه تهران</li>
-                        <li>ترجمه مجموعه داستانک‌های معاصر عربی چاپ شد</li>
-                        <li>عدم حضور در پلتفرم‌های خارجی مشکل مهم بازی‌سازان است</li>
-                        <li>از طلاب تبتی تا مدارس مطهری؛روایت تأثیر امام(ره)بر مردم هند</li>
-                        <li>تلاش خادمان شهدا برای بهسازی یادمان شهید باقری</li>
-                        <li>چرا وزیر ارشاد به نمایشگاه بازی‌های رایانه‌ای نیامد؟</li>
-                        <li>اعتراض ساناز سعیدی به سینمای مردانه</li>
-                        <li>الناز ملک: وطن‌پرستی محرک من برای بازی در پیش مرگ بود</li>
-                    </ul>
+                        <li><a href="#">کتاب «چیستی تمدن» منتشر می شود</a></li>
+                        <li><a href="#">۲۰ بهمن؛ درگیری مسلحانه در دوشان تپه و سخنرانی بازرگان در دانشگاه تهران</a></li>
+                        <li><a href="#">ترجمه مجموعه داستانک‌های معاصر عربی چاپ شد</a></li>
+                        <li><a href="#">عدم حضور در پلتفرم‌های خارجی مشکل مهم بازی‌سازان است</a></li>
+                        <li><a href="#">از طلاب تبتی تا مدارس مطهری؛روایت تأثیر امام(ره)بر مردم هند</a></li>
+                        <li><a href="#">تلاش خادمان شهدا برای بهسازی یادمان شهید باقری</a></li>
+                        <li><a href="#">چرا وزیر ارشاد به نمایشگاه بازی‌های رایانه‌ای نیامد؟</a></li>
+                        <li><a href="#">اعتراض ساناز سعیدی به سینمای مردانه</a></li>
+                        <li><a href="#">الناز ملک: وطن‌پرستی محرک من برای بازی در پیش مرگ بود</a></li>
+                      </ul>
                 </div>
             </div>
             <div class="main-news-left col-12 col-md-4 col-lg-3">
@@ -2788,16 +2800,16 @@
             <div class="news-list col-12 col-md-4 col-lg-3 ">
               <div class="content">
                 <ul>
-                    <li>بازی‌های آسیایی زمستانی؛ مریم کیاشمشکی به خط پایان نرسید</li>
-                    <li>بازی‌های آسیایی زمستانی| اسکی‌باز ایران به خط پایان نرسید</li>
-                    <li>هزینه ۲.۳۵ میلیارد دلاری باشگاه‌ها در نقل‌وانتقالات زمستانی</li>
-                    <li>حضور قطعی تیم ملی والیبال نشسته ایران در مسابقات جهانی ۲۰۲۶</li>
-                    <li>الاهلی، فیرمینو را از لیست خارج کرد</li>
-                    <li>برد PSG، دبل دمبله و گلزنی کواراتسخلیا در بازی بزرگ هفته</li>
-                    <li>روزهای خوش یوونتوس با کولوموانی؛ پیروزی در کومو</li>
-                    <li>کامبک دراماتیک منچستریونایتد در جام حذفی انگلیس</li>
-                    <li>پیروزی خانگی بایرن مونیخ در شب بریس کین</li>
-                </ul>
+                    <li><a href="#">بازی‌های آسیایی زمستانی؛ مریم کیاشمشکی به خط پایان نرسید</a></li>
+                    <li><a href="#">بازی‌های آسیایی زمستانی| اسکی‌باز ایران به خط پایان نرسید</a></li>
+                    <li><a href="#">هزینه ۲.۳۵ میلیارد دلاری باشگاه‌ها در نقل‌وانتقالات زمستانی</a></li>
+                    <li><a href="#">حضور قطعی تیم ملی والیبال نشسته ایران در مسابقات جهانی ۲۰۲۶</a></li>
+                    <li><a href="#">الاهلی، فیرمینو را از لیست خارج کرد</a></li>
+                    <li><a href="#">برد PSG، دبل دمبله و گلزنی کواراتسخلیا در بازی بزرگ هفته</a></li>
+                    <li><a href="#">روزهای خوش یوونتوس با کولوموانی؛ پیروزی در کومو</a></li>
+                    <li><a href="#">کامبک دراماتیک منچستریونایتد در جام حذفی انگلیس</a></li>
+                    <li><a href="#">پیروزی خانگی بایرن مونیخ در شب بریس کین</a></li>
+                  </ul>
               </div>
             </div>
             <div class="main-news-left col-12 col-md-4 col-lg-3">
@@ -2875,16 +2887,16 @@
                <div class="news-list col-12 col-md-4 col-lg-3 ">
                   <div class="content">
                     <ul>
-                        <li>لوکانو L۷ به صورت رسمی وارد بازار خواهد شد</li>
-                        <li>چهار هوندا وارداتی جدید قیمت خورد+کاتالوگ</li>
-                        <li>خودرو ۸ میلیارد دلار ارز گرفت</li>
-                        <li>ورود ۵۰ دستگاه اتوبوس جدید به خطوط اتوبوسرانی از فردا</li>
-                        <li>تیر ترامپ به تسلا هم خورد</li>
-                        <li>ماشین های بزرگ حتما در تصادفات امن‌تر نیستند</li>
-                        <li>سهام شیائومی به بالاترین حد خود رسید</li>
-                        <li>به‌زودی کارت‌سوخت وسایل‌ نقلیه فاقد بیمه‌ قفل می‌شود</li>
-                        <li>تحولات «سایپا» در مسیر تولید اقتصادی و داخلی‌سازی است</li>
-                    </ul>
+                        <li><a href="#">لوکانو L۷ به صورت رسمی وارد بازار خواهد شد</a></li>
+                        <li><a href="#">چهار هوندا وارداتی جدید قیمت خورد+کاتالوگ</a></li>
+                        <li><a href="#">خودرو ۸ میلیارد دلار ارز گرفت</a></li>
+                        <li><a href="#">ورود ۵۰ دستگاه اتوبوس جدید به خطوط اتوبوسرانی از فردا</a></li>
+                        <li><a href="#">تیر ترامپ به تسلا هم خورد</a></li>
+                        <li><a href="#">ماشین های بزرگ حتما در تصادفات امن‌تر نیستند</a></li>
+                        <li><a href="#">سهام شیائومی به بالاترین حد خود رسید</a></li>
+                        <li><a href="#">به‌زودی کارت‌سوخت وسایل‌ نقلیه فاقد بیمه‌ قفل می‌شود</a></li>
+                        <li><a href="#">تحولات «سایپا» در مسیر تولید اقتصادی و داخلی‌سازی است</a></li>
+                      </ul>
                   </div>
                </div>
                <div class="main-news-left col-12 col-md-4 col-lg-3">
@@ -2960,16 +2972,16 @@
                <div class="news-list col-12 col-md-4 col-lg-3 ">
                    <div class="content">
                     <ul>
-                        <li>نورافشانی در هزار نقطه از شهر تهران به مناسبت ۲۲ بهمن</li>
-                        <li>از بررسی مصوبه عوارض تردد تا حفاظت از باغات کن</li>
-                        <li>اکران بیانات قاطع رهبر معظم انقلاب در سطح شهر</li>
-                        <li>خدمات‌دهی به راهپیمایان ۲۲ بهمن با همکاری ۲۷۰۰ پاکبان</li>
-                        <li>جزئیات خدمات‌رسانی ناوگان حمل و نقل در مراسم چهل و ششمین سالگرد پیروزی شکوهمند انقلاب اسلامی</li>
-                        <li>تعطیلی پایانه مسافربری غرب تهران به مناسبت یوم‌الله ۲۲ بهمن</li>
-                        <li>۱۰ بازار جدید میوه و تره‌بار در تهران افتتاح شد</li>
-                        <li>تحول در شبکه توزیع میوه و تره‌بار تهران؛ افتتاح ۱۰ بازار جدید برای رفاه پایتخت‌نشینان</li>
-                        <li>فردا همه مراکز معاینه فنی شهر تهران فعال است </li>
-                    </ul>
+                        <li><a href="#">نورافشانی در هزار نقطه از شهر تهران به مناسبت ۲۲ بهمن</a></li>
+                        <li><a href="#">از بررسی مصوبه عوارض تردد تا حفاظت از باغات کن</a></li>
+                        <li><a href="#">اکران بیانات قاطع رهبر معظم انقلاب در سطح شهر</a></li>
+                        <li><a href="#">خدمات‌دهی به راهپیمایان ۲۲ بهمن با همکاری ۲۷۰۰ پاکبان</a></li>
+                        <li><a href="#">جزئیات خدمات‌رسانی ناوگان حمل و نقل در مراسم چهل و ششمین سالگرد پیروزی شکوهمند انقلاب اسلامی</a></li>
+                        <li><a href="#">تعطیلی پایانه مسافربری غرب تهران به مناسبت یوم‌الله ۲۲ بهمن</a></li>
+                        <li><a href="#">۱۰ بازار جدید میوه و تره‌بار در تهران افتتاح شد</a></li>
+                        <li><a href="#">تحول در شبکه توزیع میوه و تره‌بار تهران؛ افتتاح ۱۰ بازار جدید برای رفاه پایتخت‌نشینان</a></li>
+                        <li><a href="#">فردا همه مراکز معاینه فنی شهر تهران فعال است</a></li>
+                      </ul>
                    </div>
                </div>
                <div class="main-news-left col-12 col-md-4 col-lg-3">
@@ -3044,16 +3056,16 @@
                <div class="news-list col-12 col-md-4 col-lg-3 ">
                    <div class="content">
                     <ul>
-                        <li>ثبت تصویر یک قلاده پلنگ در پناهگاه حیات وحش کاوه ده فیروزکو</li>
-                        <li>آماده‌باش یگان حفاظت محیط زیست؛ مراقب حیات وحش در روزهای سرد باشید</li>
-                        <li>شناسایی ۱۲ قلاده پلنگ ایرانی بالغ و یک توله در پارک ملی توران شاهرود</li>
-                        <li>ادارات خوزستان هم فردا تعطیل شد</li>
-                        <li>مسائل محیط زیستی از موضوعات اصلی مدیریت بحران کلانشهر تهران هستند</li>
-                        <li>آلودگی هوا در خوزستان از سطح قرمز فراتر رفت</li>
-                        <li>هوای اصفهان و کاشان آلوده است؛ قطعی ایستگاه‌های محیط‌زیست</li>
-                        <li>انتخاب اعضای هیئت رئیسه فراکسیون محیط زیست مجلس</li>
-                        <li>هوای هویزه در وضعیت قرمز</li>
-                    </ul>
+                        <li><a href="#">ثبت تصویر یک قلاده پلنگ در پناهگاه حیات وحش کاوه ده فیروزکو</a></li>
+                        <li><a href="#">آماده‌باش یگان حفاظت محیط زیست؛ مراقب حیات وحش در روزهای سرد باشید</a></li>
+                        <li><a href="#">شناسایی ۱۲ قلاده پلنگ ایرانی بالغ و یک توله در پارک ملی توران شاهرود</a></li>
+                        <li><a href="#">ادارات خوزستان هم فردا تعطیل شد</a></li>
+                        <li><a href="#">مسائل محیط زیستی از موضوعات اصلی مدیریت بحران کلانشهر تهران هستند</a></li>
+                        <li><a href="#">آلودگی هوا در خوزستان از سطح قرمز فراتر رفت</a></li>
+                        <li><a href="#">هوای اصفهان و کاشان آلوده است؛ قطعی ایستگاه‌های محیط‌زیست</a></li>
+                        <li><a href="#">انتخاب اعضای هیئت رئیسه فراکسیون محیط زیست مجلس</a></li>
+                        <li><a href="#">هوای هویزه در وضعیت قرمز</a></li>
+                      </ul>
                    </div>
                </div>
                <div class="main-news-left col-12 col-md-4 col-lg-3">
@@ -3130,16 +3142,16 @@
                <div class="news-list col-12 col-md-4 col-lg-3 ">
                    <div class="content">
                     <ul>
-                        <li>پزشکیان: ایران باید به جایگاه واقعی خود برسد؛ دوستی و صلح کلید توسعه گردشگری است</li>
-                        <li>«هنر چوقابافی» قصه‌ای از اصالت و زیبایی؛ «شوکل» روستای ملی می‌شود</li>
-                        <li>پزشکیان: به دنبال توسعه اقتصاد گردشگری هستیم</li>
-                        <li>موزه بلدیه در باغ زرشک؛ احیای حافظه شهری</li>
-                        <li>رویدادهای خوش بهمنی در حوزه میراث‌فرهنگی</li>
-                        <li>امروز ۲۲ بهمن بازدید از موزه‌ها رایگان است</li>
-                        <li>احتمال حضور رئیس جمهور در نمایشگاه گردشگری و دعوت از اینفلوئنسر آمریکایی</li>
-                        <li>ارائه تسهیلات برای استفاده از انرژی های تجدیدپذیر در تاسیسات گردشگری</li>
-                        <li>تمدید ساعت کاری موزه هنرهای دینی امام </li>
-                    </ul>
+                        <li><a href="#">پزشکیان: ایران باید به جایگاه واقعی خود برسد؛ دوستی و صلح کلید توسعه گردشگری است</a></li>
+                        <li><a href="#">«هنر چوقابافی» قصه‌ای از اصالت و زیبایی؛ «شوکل» روستای ملی می‌شود</a></li>
+                        <li><a href="#">پزشکیان: به دنبال توسعه اقتصاد گردشگری هستیم</a></li>
+                        <li><a href="#">موزه بلدیه در باغ زرشک؛ احیای حافظه شهری</a></li>
+                        <li><a href="#">رویدادهای خوش بهمنی در حوزه میراث‌فرهنگی</a></li>
+                        <li><a href="#">امروز ۲۲ بهمن بازدید از موزه‌ها رایگان است</a></li>
+                        <li><a href="#">احتمال حضور رئیس جمهور در نمایشگاه گردشگری و دعوت از اینفلوئنسر آمریکایی</a></li>
+                        <li><a href="#">ارائه تسهیلات برای استفاده از انرژی های تجدیدپذیر در تاسیسات گردشگری</a></li>
+                        <li><a href="#">تمدید ساعت کاری موزه هنرهای دینی امام</a></li>
+                      </ul>
                    </div>
                </div>
                <div class="main-news-left col-12 col-md-4 col-lg-3">
@@ -3215,16 +3227,16 @@
                <div class="news-list col-12 col-md-4 col-lg-3 ">
                   <div class="content">
                     <ul>
-                        <li>دیدار رئیس ستاد نیروهای‌مسلح عمان با سرلشکر باقری</li>
-                        <li>قتل هولناک یک دختربچه ۱۰ساله به دست نامادری</li>
-                        <li>سخنان عجیب مالک کوروش کمپانی: من کارآفرین بودم!</li>
-                        <li>مرتضی‌گرد به تهران اضافه می‌شود؟</li>
-                        <li>راه‌اندازی سیستم موشک‌انداز روی خودروی پراید!</li>
-                        <li>بهترین خودروهای دنیا در سال ۲۰۲۴</li>
-                        <li>استعفای جنجالی نرگس آبیار از شورای پروانه نمایش</li>
-                        <li>۴ لحظه‌ خبرساز از تقسیم غنایم فجر ۴۳</li>
-                        <li>کاپیتان پرسپولیس: از سه باشگاه خارجی پیشنهاد دارم</li>
-                    </ul>
+                        <li><a href="#">دیدار رئیس ستاد نیروهای‌مسلح عمان با سرلشکر باقری</a></li>
+                        <li><a href="#">قتل هولناک یک دختربچه ۱۰ساله به دست نامادری</a></li>
+                        <li><a href="#">سخنان عجیب مالک کوروش کمپانی: من کارآفرین بودم!</a></li>
+                        <li><a href="#">مرتضی‌گرد به تهران اضافه می‌شود؟</a></li>
+                        <li><a href="#">راه‌اندازی سیستم موشک‌انداز روی خودروی پراید!</a></li>
+                        <li><a href="#">بهترین خودروهای دنیا در سال ۲۰۲۴</a></li>
+                        <li><a href="#">استعفای جنجالی نرگس آبیار از شورای پروانه نمایش</a></li>
+                        <li><a href="#">۴ لحظه‌ خبرساز از تقسیم غنایم فجر ۴۳</a></li>
+                        <li><a href="#">کاپیتان پرسپولیس: از سه باشگاه خارجی پیشنهاد دارم</a></li>
+                      </ul>
                   </div>
                </div>
                <div class="main-news-left col-12 col-md-4 col-lg-3">
@@ -3300,16 +3312,16 @@
                <div class="news-list col-12 col-md-4 col-lg-3 ">
                   <div class="content">
                     <ul>
-                        <li>توجه بیشتر سینما به سلامت روان؛ گامی به سوی استانداردهای جهانی</li>
-                        <li>خطرات پنهان سرطان رحم؛ افرادی که بیشتر در معرض ابتلا هستند</li>
-                        <li>آنفلوآنزای نوع A شایع‌ترین عفونت تنفسی سال و اشتباهات رایج در درمان آن</li>
-                        <li>بیمارستان های ایران در گرداب فرسودگی و چالش های مدیریتی</li>
-                        <li>چگونه استرس دوران بارداری را مدیریت کنیم؟</li>
-                        <li>پونه کوهی؛ راه حل طبیعی برای درمان اختلالات گوارشی</li>
-                        <li>رابطه ۱۳ نوع سرطان با عوامل تغذیه‌ای و چاقی</li>
-                        <li>پیشگیری از مشکلات ستون فقرات با سبک زندگی سالم</li>
-                        <li>استرس بارداری را چگونه مدیریت کنیم؟</li>
-                    </ul>
+                        <li><a href="#">توجه بیشتر سینما به سلامت روان؛ گامی به سوی استانداردهای جهانی</a></li>
+                        <li><a href="#">خطرات پنهان سرطان رحم؛ افرادی که بیشتر در معرض ابتلا هستند</a></li>
+                        <li><a href="#">آنفلوآنزای نوع A شایع‌ترین عفونت تنفسی سال و اشتباهات رایج در درمان آن</a></li>
+                        <li><a href="#">بیمارستان های ایران در گرداب فرسودگی و چالش های مدیریتی</a></li>
+                        <li><a href="#">چگونه استرس دوران بارداری را مدیریت کنیم؟</a></li>
+                        <li><a href="#">پونه کوهی؛ راه حل طبیعی برای درمان اختلالات گوارشی</a></li>
+                        <li><a href="#">رابطه ۱۳ نوع سرطان با عوامل تغذیه‌ای و چاقی</a></li>
+                        <li><a href="#">پیشگیری از مشکلات ستون فقرات با سبک زندگی سالم</a></li>
+                        <li><a href="#">استرس بارداری را چگونه مدیریت کنیم؟</a></li>
+                      </ul>
                   </div>
                </div>
                <div class="main-news-left col-12 col-md-4 col-lg-3">
@@ -3386,16 +3398,16 @@
                <div class="news-list col-12 col-md-4 col-lg-3 ">
                    <div class="content">
                     <ul>
-                        <li>آغاز حراج سکه‌های ۸۶/خریداران تا ساعت ۱۴ ثبت‌سفارش کنند</li>
-                        <li>گاز لیزر، فناوری نوین در برش و جوشکاری صنعتی</li>
-                        <li>شرکت بازرگانی تاج بزرگ ترین مرکز پخش تیلر کشاورزی</li>
-                        <li>بسته‌های ویژه و عیدی همراه اول به مناسبت نیمه شعبان</li>
-                        <li>تعویض شافت واسط موتور قفسه ۵ فینشینگ نورد گرم بدون دمونتاژ</li>
-                        <li>تأخیر در تحویل محصول به مشتریان با تداوم محدودیت‌های انرژی</li>
-                        <li>نصب و راه‌اندازی موفقیت‌آمیز ماشین برداشت در فولاد مبارکه</li>
-                        <li>حضور فعالانه یاقوت در پروژه‌های حفاری اکتشافی</li>
-                        <li>خبر مهم «ومعادن» برای سهامداران</li>
-                    </ul>
+                        <li><a href="#">آغاز حراج سکه‌های ۸۶/خریداران تا ساعت ۱۴ ثبت‌سفارش کنند</a></li>
+                        <li><a href="#">گاز لیزر، فناوری نوین در برش و جوشکاری صنعتی</a></li>
+                        <li><a href="#">شرکت بازرگانی تاج بزرگ ترین مرکز پخش تیلر کشاورزی</a></li>
+                        <li><a href="#">بسته‌های ویژه و عیدی همراه اول به مناسبت نیمه شعبان</a></li>
+                        <li><a href="#">تعویض شافت واسط موتور قفسه ۵ فینشینگ نورد گرم بدون دمونتاژ</a></li>
+                        <li><a href="#">تأخیر در تحویل محصول به مشتریان با تداوم محدودیت‌های انرژی</a></li>
+                        <li><a href="#">نصب و راه‌اندازی موفقیت‌آمیز ماشین برداشت در فولاد مبارکه</a></li>
+                        <li><a href="#">حضور فعالانه یاقوت در پروژه‌های حفاری اکتشافی</a></li>
+                        <li><a href="#">خبر مهم «ومعادن» برای سهامداران</a></li>
+                      </ul>
                    </div>
                </div>
                <div class="main-news-left col-12 col-md-4 col-lg-3">
@@ -3471,16 +3483,16 @@
                <div class="news-list col-12 col-md-4 col-lg-3 ">
                   <div class="content">
                     <ul>
-                        <li>درخواست غیرمنتظره برنده سیمرغ از وزیر ارشاد</li>
-                        <li>برندگان سیمرغ جشنواره فجر معرفی شدند+عکس</li>
-                        <li>بهترین بازیگر مرد جشنواره فیلم فجر مشخص شد</li>
-                        <li>فرهاد آییش،بهترین بازیگر مکمل مرد جشنواره فیلم فجر</li>
-                        <li>کلیپ خاطره‌انگیز جشنواره فجر با حضور چهره ها</li>
-                        <li>تصاویر داغ بازیگران در اختتامیه جشنواره فیلم فجر</li>
-                        <li>واکنش دنیا به جشن پیروزی انقلاب ایران+ فیلم</li>
-                        <li>اداره کشور بدون حضور مردم انحراف از مکتب امام است</li>
-                        <li>شور و شعور مردم تبریز در راهپیمایی ۲۲ </li>
-                    </ul>
+                        <li><a href="#">درخواست غیرمنتظره برنده سیمرغ از وزیر ارشاد</a></li>
+                        <li><a href="#">برندگان سیمرغ جشنواره فجر معرفی شدند+عکس</a></li>
+                        <li><a href="#">بهترین بازیگر مرد جشنواره فیلم فجر مشخص شد</a></li>
+                        <li><a href="#">فرهاد آییش،بهترین بازیگر مکمل مرد جشنواره فیلم فجر</a></li>
+                        <li><a href="#">کلیپ خاطره‌انگیز جشنواره فجر با حضور چهره ها</a></li>
+                        <li><a href="#">تصاویر داغ بازیگران در اختتامیه جشنواره فیلم فجر</a></li>
+                        <li><a href="#">واکنش دنیا به جشن پیروزی انقلاب ایران+ فیلم</a></li>
+                        <li><a href="#">اداره کشور بدون حضور مردم انحراف از مکتب امام است</a></li>
+                        <li><a href="#">شور و شعور مردم تبریز در راهپیمایی ۲۲</a></li>
+                      </ul>
                   </div>
                </div>
                <div class="main-news-left col-12 col-md-4 col-lg-3">

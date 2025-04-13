@@ -15,26 +15,21 @@ document.querySelectorAll('.dropdown-menu').forEach(item => {
     });
 });
 
-//     const navbarCollapse = document.querySelector('.navbar-collapse');
-//     const categoty = document.querySelector('#hidden')
+    // calculate the margin-right of the page in container
+    function togglerMargin() {
+    const topMenu = document.querySelector('.top-menu');
+    const toggler = document.querySelector('.navbar-toggler')
+    const navbarBrand = document.querySelector('.navbar-brand')
+    const rect = topMenu.getBoundingClientRect();
 
-// const observer = new MutationObserver(() => {
-//     if (navbarCollapse.classList.contains('show')) {
-//        categoty.style.display = 'none'
-// } else {
-//         navbarCollapse.style.transition = 'all .1s ease'
-//         categoty.style.display = 'block'
-//     }
-// });
+    const distanceFromRight = window.innerWidth - rect.right;
+    // const distanceFromLeft = window.innerWidth - rect.left;
+    
+    toggler.style.marginRight = `${distanceFromRight}px`;
+    }
+    window.addEventListener('resize',togglerMargin)
+    togglerMargin()
 
-// observer.observe(navbarCollapse, { attributes: true, attributeFilter: ['class'] });
-
-
-    //hidden category when click on burger-menu زمانی که روی برگرمنو کلیک میشود کتگوری پایین(که زیر collapse) قرار داره نمایش داده میشود و کتگوری‌ای که بالا چسبیده مخفی میشود
-    // const navbarCollapse = document.querySelector('.navbar-collapse')
-    // const categoty = document.querySelector('#hidden')
-    // navbarCollapse.addEventListener('shown.bs.collapse', ()=>categoty.style.display = 'none')
-    // navbarCollapse.addEventListener('hidden.bs.collapse', ()=>categoty.style.display = 'block')
 
 
   // sliding categoreisby click
@@ -59,23 +54,6 @@ document.querySelectorAll('.dropdown-menu').forEach(item => {
             behavior: 'smooth'
         });
     });
-
-    // show section bottom of the header
-
-    // const header = document.querySelector('.header');
-    // const navbarToggler = document.querySelector('.navbar-toggler');
-    // const newsSection = document.querySelector('.news');
-
-    // function updateSectionMargin() {
-    //     const headerHeight = header.offsetHeight; // header height calculating
-    //     newsSection.style.marginTop = `${headerHeight}px`; // add a space to section same by header height
-    // }
-    // updateSectionMargin()
-    // navbarToggler.addEventListener('click',updateSectionMargin)
-    // window.addEventListener('resize',updateSectionMargin)
-
-
-
   
     //set unique color for each boxes in category and special news sections
   function setUniqueColor(target) {
@@ -93,8 +71,7 @@ document.querySelectorAll('.dropdown-menu').forEach(item => {
 
 //    my codes 👇
 
-
-    // add an active class to the menu-item that selected
+ // add an active class to the menu-item that selected
 //     const menuItems = document.querySelectorAll('.menu-item')
 //      menuItems.forEach(item=>{
 //         item.addEventListener('click',function(){
@@ -141,9 +118,8 @@ document.querySelectorAll('.dropdown-menu').forEach(item => {
 // document.querySelector('#carouselExampleIndicators').addEventListener("slid.bs.carousel",()=>car_indMatcher('.carousel-item','.menu-item'))
 
 
+
 // chatGPT codes that optimized my codes 👇
-
-
 
     const menuItems = document.querySelectorAll(".menu-item");
     const carouselElement = document.querySelector("#carouselExampleIndicators");
