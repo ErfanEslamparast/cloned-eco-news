@@ -53,20 +53,18 @@
                     </button>
 
                         <div class="collapse collapse-vertically" id="signin-up-form">
-                          <div class="card card-body">
-                            <div class="login-box">
-                                <input type="text" placeholder="نام کاربری یا آدرس ایمیل">
-                                <input type="password" placeholder="کلمه عبور">
-                                <div class="remember">
-                                    <input type="checkbox" id="remember">
-                                    <label for="remember">مرا به خاطر بسپار</label>
-                                </div>
-                                <div class="buttons">
-                                    <button class="register-btn">عضویت</button>
-                                    <button class="login-btn">ورود</button>
-                                </div>
+                            <form action="" class="login-box">
+                            <input type="text" placeholder="نام کاربری یا آدرس ایمیل">
+                            <input type="password" class="border-top-0" placeholder="کلمه عبور">
+                            <div class="remember">
+                              <input type="checkbox" id="remember">
+                              <label for="remember">مرا به خاطر بسپار</label>
                             </div>
-                          </div>
+                            <div class="buttons">
+                              <button class="login-btn">ورود</button>
+                              <button class="register-btn">عضویت</button>
+                            </div>
+                            </form>
                         </div>
                 </div>
             </div>
@@ -137,7 +135,7 @@
                                     اخبار و رویدادها
                                 </a>
                                 <ul class="dropdown-menu justify-content-lg-center" aria-labelledby="newsMenu">
-                                    <div class="row container-md">
+                                    <div class="row container-md px-2">
                                         <div class="col-12 col-lg-4 pe-2">
                                             <h6 class="text-center text-sm-center ">دسته بندی عمومی</h6>
                                             <ul class="d-flex flex-wrap">
@@ -347,7 +345,8 @@
                                     چندرسانه‌ای
                                 </a>
                                 <ul class="dropdown-menu flex justify-content-lg-center" aria-labelledby="ratesMenu">
-                                   <div class="row container-md d-flex ">
+                                   <div class="row container-md d-flex "> 
+                                    <ul class="d-flex flex-wrap">
                                         <li><a class="dropdown-item text-white" href="#"><i
                                                     class="fa-solid fa-chevron-left"></i>فیلم</a></li>
                                         <li><a class="dropdown-item text-white" href="#"><i
@@ -362,6 +361,7 @@
                                                     class="fa-solid fa-chevron-left"></i>عکس</a></li>
                                         <li><a class="dropdown-item text-white" href="#"><i
                                                     class="fa-solid fa-chevron-left"></i>اینفوگرافی</a></li>
+                                </ul>
                                    </div>
                                 </ul>
                             </li>
@@ -874,7 +874,7 @@
                 <div class="row d-flex justify-content-between">
                     <div class="col-12">
                         <div class="row fs-5 news-top d-flex align-items-center justify-content-between">
-                            <div class="col-9 d-flex align-items-center fs-6 ps-2">
+                            <div class="col-8 col-lg-9 d-flex align-items-center fs-6 ps-2">
                                 <span class="me-1 d-none d-md-flex">سرخط اخبار: </span>
                                 <div class="swiper myNewsSwiper">
                                     <div class="swiper-wrapper">
@@ -886,9 +886,9 @@
                                 </div>
                             </div>
                             
-                            <div class="advertising-box col-3 d-none d-md-flex justify-content-between text-muted fs-6 ps-md-2">
+                            <div class="advertising-box col-4 d-none d-md-flex justify-content-between text-muted fs-6 ps-md-2">
                                 <div class="row">
-                                    <span class="col-8" style="font-size: 15px;"><i class="fa-thin fa-table-columns"></i>تبلیغات در سایت:</span>
+                                    <span class="col-8" style="font-size: 15px;"><i class="fa-solid fa-table-columns"style='margin-left:7px;font-size:95%'></i>تبلیغات در سایت:</span>
                                     <span class="col-4" style="font-size: 20px;">۸۸۹۳۰۲۷۰</span>
                                 </div>
                             </div>
@@ -906,7 +906,7 @@
                                     <div class="news-title text-white">مذاکره پرسپولیس با مهاجم ترکی-آلمانی</div>
                                 </div>
                                 <div class="thumbs d-md-flex">
-                                    <div class="first-thumb pe-2" >
+                                    <div class="first-thumb pe-md-2" >
                                       <a href="">
                                        <div class="content d-flex align-items-center bg-white">
                                         <div class="news-image-container overflow-hidden"><img class="news-image img-fluid " src="./images/news-section/thumb1.jpg"></div>
@@ -914,7 +914,7 @@
                                        </div>
                                       </a>
                                     </div>
-                                    <div class="second-thumb ps-2">
+                                    <div class="second-thumb ps-md-2">
                                       <a href="">
                                         <div class="content d-flex align-items-center bg-white">
                                             <div class="news-image-container overflow-hidden"><img class="news-image img-fluid " src="./images/news-section/thumb2.jpg"></div>
@@ -949,7 +949,7 @@
                             
                 
                             <div class="advertising-box col-12 col-md-3 left-side ps-md-2">
-                                <div class="adv-banner mt-4 mt-md-0"><img class="img-fluid w-100"
+                                <div class="adv-banner mt-3 mt-md-0 d-flex justify-content-center"><img class="img-fluid w-100"
                                         src="./images/news-section/adv-baner.gif"></div>
                                 <div class="trend-topics d-none d-md-block ">
                                     <div class="heading d-flex align-items-center">
@@ -1017,7 +1017,7 @@
             </button>
           </div>
 
-        <div class="row news-subjects d-flex justify-content-center flex-nowrap gap-3 mt-3 ">
+        <div class="row news-subjects d-flex justify-content-center flex-nowrap gap-3 mt-2 mt-md-3 ">
             <div class="col menu-item position-relative text-center active" data-color="#B22222"  ><span>اقتصاد</span></div>
             <div class="col menu-item position-relative text-center" data-color="#3300CC"  ><span>سیاست</span></div>
             <div class="col menu-item position-relative text-center" data-color="#0040AD"  ><span>فرهنگ</span></div>
@@ -1030,7 +1030,7 @@
 
     </Section>
     <!-- Full Width Banner -->
-    <div class="container-fluid container-md banner-container my-3">
+    <div class="container-fluid container-md banner-container">
         <img src="./images/adv-baner-fullWidth.gif" style="width: 100%;">
     </div>
     <!-- Currency Prices -->
@@ -2285,7 +2285,7 @@
             </div>
         </div>
         <!-- advertising-gifs -->
-        <div class="adv-banner-container row col-12 col-lg-3 d-flex justify-content-center flex-lg-column justify-content-lg-start  ps-2" style="gap: 10px 0;margin-top: 41px;">
+        <div class="adv-banner-container row col-12 col-lg-3 d-flex justify-content-center flex-lg-column justify-content-lg-start  ps-2">
             <div class="col-12 col-md-3 col-lg-12"><img class="img-fluid w-100" src="./images/crncy-adv-banner/300-100-1736413532.gif"></div>
             <div class="col-12 col-md-3 col-lg-12"><img class="img-fluid w-100" src="./images/crncy-adv-banner/300-100-version41-1736253106.gif"></div>
             <div class="col-12 col-md-3 col-lg-12"><img class="img-fluid w-100" src="./images/crncy-adv-banner/300x100-1684129903.gif"></div>
@@ -2322,8 +2322,10 @@
             <div class="main-news-right col-12 col-md-4 col-lg-3">
             <div class="content">
                 <div class="img-container"><div class="overflow-hidden position-relative"><img src="./images/special-news/1/R.png" class="img-fluid col-12"></div></div>
-                <h6 class="text-muted mt-2 mb-0">در ۱۰ ماه امسال صورت گرفت:</h6>
-                <p>وصول ۹۲۱ هزار میلیارد تومان مالیات</p>
+                <div class="text-container">
+                    <h6 class="text-muted mb-0">در ۱۰ ماه امسال صورت گرفت:</h6>
+                    <p>وصول ۹۲۱ هزار میلیارد تومان مالیات</p>
+                </div>
                 </div>
             </div>
             <div class="news-thumbs col-lg-3 d-none d-lg-flex flex-column gap-1">
@@ -2414,7 +2416,9 @@
             <div class="main-news-right col-12 col-md-4 col-lg-3 ">
                 <div class="content">
                     <div class="img-container"><div class="overflow-hidden position-relative"><img src="./images/special-news/2/R.jpg" class="img-fluid col-12"></div></div>
-                <p>بازی ارزی به نام تک نرخی سازی؛ دولت برد مردم باختند؟</p>
+                <div class="text-container">
+                    <p>بازی ارزی به نام تک نرخی سازی؛ دولت برد مردم باختند؟</p>
+                </div>
                 </div>
             </div>
             <div class="news-thumbs col-lg-3 d-none d-lg-flex flex-column gap-1">
@@ -2467,8 +2471,10 @@
             <div class="main-news-left col-12 col-md-4 col-lg-3">
                 <div class="content">
                     <div class="img-container"><div class="overflow-hidden position-relative"><img src="./images/special-news/2/L.jpg" class="img-fluid col-12"></div></div>
-                    <h6 class="text-muted mt-2 mb-0">طلا رکورد زد؛:</h6>
-                    <p>ترس از وقوع جنگ تجاری قیمت طلا را افزایش داد</p>
+                    <div class="text-container">
+                        <h6 class="text-muted mb-0">طلا رکورد زد؛:</h6>
+                        <p>ترس از وقوع جنگ تجاری قیمت طلا را افزایش داد</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -2502,8 +2508,10 @@
             <div class="main-news-right col-12 col-md-4 col-lg-3 ">
                 <div class="content">
                     <div class="img-container"><div class="overflow-hidden position-relative"><img src="./images/special-news/3/R.jpg" class="img-fluid col-12"></div></div>
-                    <h6 class="text-muted mt-2 mb-0">وزیر صمت:</h6>
+                    <div class="text-container">
+                        <h6 class="text-muted mb-0">وزیر صمت:</h6>
                     <p>۳۰ هزار مگاوات از انرژی تجدیدپذیر وارد مدار می‌شود </p>
+                    </div>
                 </div>
             </div>
             <div class="news-thumbs col-lg-3 d-none d-lg-flex flex-column gap-1">
@@ -2554,8 +2562,10 @@
             <div class="main-news-left col-12 col-md-4 col-lg-3">
                <div class="content">
                 <div class="img-container"><div class="overflow-hidden position-relative"><img src="./images/special-news/3/L.jpg" class="img-fluid col-12"></div></div>
-                <h6 class="text-muted mt-2 mb-0">سخنگوی وزرات خارکه تاکید کرد:</h6>
-                <p>رد قاطع طرح پاکسازی غزه و تملک آن توسط آمریکا</p>
+                <div class="text-container">
+                    <h6 class="text-muted mb-0">سخنگوی وزرات خارکه تاکید کرد:</h6>
+                    <p>رد قاطع طرح پاکسازی غزه و تملک آن توسط آمریکا</p>
+                </div>
                </div>
             </div>
         </div>
@@ -2591,8 +2601,10 @@
             <div class="main-news-right col-12 col-md-4 col-lg-3 ">
                 <div class="content">
                     <div class="img-container"><div class="overflow-hidden position-relative"><img src="./images/special-news/4/R.jpg" class="img-fluid col-12"></div></div>
-                    <h6 class="text-muted mt-2 mb-0">انقلاب در صنعت پوشاک؛</h6>
-                    <p>پارچه خورشیدی که شما را بدون برق گرم می‌کند!</p>
+                    <div class="text-container">
+                        <h6 class="text-muted mb-0">انقلاب در صنعت پوشاک؛</h6>
+                        <p>پارچه خورشیدی که شما را بدون برق گرم می‌کند!</p>
+                    </div>
                 </div>
             </div>
             <div class="news-thumbs col-lg-3 d-none d-lg-flex flex-column gap-1">
@@ -2680,7 +2692,9 @@
             <div class="main-news-right col-12 col-md-4 col-lg-3 ">
                 <div class="content">
                     <div class="img-container"><div class="overflow-hidden position-relative"><img src="./images/special-news/5/R.jpg" class="img-fluid col-12"></div></div>
+                    <div class="text-container">
                 <p>تفاهم‌نامه همکاری برای توسعه پایدار مناطق میزبان انرژی</p>
+                    </div>
                 </div>
             </div>
             <div class="news-thumbs col-lg-3 d-none d-lg-flex flex-column gap-1">
@@ -2766,7 +2780,9 @@
             <div class="main-news-right col-12 col-md-4 col-lg-3 ">
                 <div class="content">
                     <div class="img-container"><div class="overflow-hidden position-relative"><img src="./images/special-news/6/R.jpg" class="img-fluid col-12"></div></div>
+                    <div class="text-container">
                     <p>خداحافظی بختیاری زاده و استقلال در کویر?</p>
+                    </div>
                 </div>
             </div>
             <div class="news-thumbs col-lg-3 d-none d-lg-flex flex-column gap-1">
@@ -2815,8 +2831,10 @@
             <div class="main-news-left col-12 col-md-4 col-lg-3">
                 <div class="content">
                     <div class="img-container"><div class="overflow-hidden position-relative"><img src="./images/special-news/6/L.jpg" class="img-fluid col-12"></div></div>
-                <h6 class="text-muted  mt-2 mb-0">رنکینگ اتحادیه جهانی کشتی</h6>
-                <p>عباس ابراهیم زاده آزادکار وزن ۶۵ کیلوگرم طلایی شد</p>
+                <div class="text-container">
+                    <h6 class="text-muted mb-0">رنکینگ اتحادیه جهانی کشتی</h6>
+                    <p>عباس ابراهیم زاده آزادکار وزن ۶۵ کیلوگرم طلایی شد</p>
+                </div>
                 </div>
             </div>
         </div>
@@ -2851,8 +2869,10 @@
                <div class="main-news-right col-12 col-md-4 col-lg-3 ">
                   <div class="content">
                     <div class="img-container"><div class="overflow-hidden position-relative"><img src="./images/special-news/7/R.jpg" class="img-fluid col-12"></div></div>
-                    <h6 class="text-muted mt-2 mb-0">تعرفه‌های اتحادیه اروپا بر واردات چینی:</h6>
-                    <p>نگرانی مدیرعامل سئات از خطر برای ۱۵۰۰ شغل</p>
+                    <div class="text-container">
+                        <h6 class="text-muted mb-0">تعرفه‌های اتحادیه اروپا بر واردات چینی:</h6>
+                        <p>نگرانی مدیرعامل سئات از خطر برای ۱۵۰۰ شغل</p>
+                    </div>
                   </div>
                </div>
                <div class="news-thumbs col-lg-3 d-none d-lg-flex flex-column gap-1">
@@ -2902,8 +2922,10 @@
                <div class="main-news-left col-12 col-md-4 col-lg-3">
                 <div class="content">
                     <div class="img-container"><div class="overflow-hidden position-relative"><img src="./images/special-news/7/L.jpg" class="img-fluid col-12"></div></div>
-                   <h6 class="text-muted mt-2 mb-0">چرا ارز به بازار خودرو فشار می‌آورد؟</h6>
-                   <p>روند صعودی قیمت خودروهای مونتاژی دربهمن ماه راه و شهرسازی </p>
+                   <div class="text-container">
+                    <h6 class="text-muted mb-0">چرا ارز به بازار خودرو فشار می‌آورد؟</h6>
+                    <p>روند صعودی قیمت خودروهای مونتاژی دربهمن ماه راه و شهرسازی </p>
+                   </div>
                 </div>
                    </div>
            </div>
@@ -2938,8 +2960,10 @@
                <div class="main-news-right col-12 col-md-4 col-lg-3 ">
                   <div class="content">
                     <div class="img-container"><div class="overflow-hidden position-relative"><img src="./images/special-news/8/R.jpg" class="img-fluid col-12"></div></div>
+                    <div class="text-container">
                     <p>افزایش دوبرابری وام مسکن بانک مسکن</p>
-                  </div>
+                    </div>
+                </div>
                </div>
                <div class="news-thumbs col-lg-3 d-none d-lg-flex flex-column gap-1">
                   <div class="content">
@@ -3021,8 +3045,10 @@
                <div class="main-news-right col-12 col-md-4 col-lg-3 ">
                   <div class="content">
                     <div class="img-container"><div class="overflow-hidden position-relative"><img src="./images/special-news/9/R.jpg" class="img-fluid col-12"></div></div>
-                    <p>قیمت سیب‌زمینی به ۷۵ هزار تومان هم رسید!</p>
-                  </div>
+                    <div class="text-container">
+                      <p>قیمت سیب‌زمینی به ۷۵ هزار تومان هم رسید!</p>
+                    </div>
+                </div>
                </div>
                <div class="news-thumbs col-lg-3 d-none d-lg-flex flex-column gap-1">
                    <div class="content">
@@ -3071,7 +3097,9 @@
                <div class="main-news-left col-12 col-md-4 col-lg-3">
                 <div class="content">
                     <div class="img-container"><div class="overflow-hidden position-relative"><img src="./images/special-news/9/L.jpg" class="img-fluid col-12"></div></div>
+                    <div class="text-container">
                     <p>دانه‌ای کوچک اما معجزه‌ای بزرگ برای سلامتی</p>
+                    </div>    
                 </div>
                 </div>
         </div>
@@ -3107,8 +3135,10 @@
                <div class="main-news-right col-12 col-md-4 col-lg-3 ">
                   <div class="content">
                     <div class="img-container"><div class="overflow-hidden position-relative"><img src="./images/special-news/10/R.png" class="img-fluid col-12"></div></div>
+                    <div class="text-container">
                     <p>کاهش دارایی‌های بوئینگ در پی تغییرات برنامه فضایی</p>
-                  </div>
+                    </div>
+                </div>
                </div>
                <div class="news-thumbs col-lg-3 d-none d-lg-flex flex-column gap-1">
                   <div class="content">
@@ -3156,8 +3186,11 @@
                </div>
                <div class="main-news-left col-12 col-md-4 col-lg-3">
                 <div class="content">
-                    <div class="img-container"><div class="overflow-hidden position-relative"><img src="./images/special-news/10/L.jpg" class="img-fluid col-12"></div></div>                       <h6 class="text-muted mt-2 mb-0">وزیر میراث فرهنگی</h6>
+                    <div class="img-container"><div class="overflow-hidden position-relative"><img src="./images/special-news/10/L.jpg" class="img-fluid col-12"></div></div>    
+                    <div class="text-container">
+                    <h6 class="text-muted mb-0">وزیر میراث فرهنگی</h6>
                     <p>اصفهان سرزمین تمدنی و هویت ایران است</p>
+                    </div>
                 </div>
                 </div>
         </div>
@@ -3193,8 +3226,10 @@
                <div class="main-news-right col-12 col-md-4 col-lg-3 ">
                   <div class="content">
                     <div class="img-container"><div class="overflow-hidden position-relative"><img src="./images/special-news/11/R.jpg" class="img-fluid col-12"></div></div>
+                    <div class="text-container">
                     <p>لزوم خویشتنداری در مواجهه با خطاهای کوچک جوانان</p>
-                  </div>
+                    </div>
+                </div>
                </div>
                <div class="news-thumbs col-lg-3 d-none d-lg-flex flex-column gap-1">
                     <div class="content">
@@ -3242,8 +3277,10 @@
                <div class="main-news-left col-12 col-md-4 col-lg-3">
                 <div class="content">
                     <div class="img-container"><div class="overflow-hidden position-relative"><img src="./images/special-news/11/L.jpg" class="img-fluid col-12"></div></div>
-                       <h6 class="text-muted mt-2 mb-0">اختصاصی اکونیوز</h6>
-                    <p>با این معجون‌ها چند روزه کبد خود را پاکسازی کنید</p>
+                    <div class="text-container">
+                        <h6 class="text-muted mb-0">اختصاصی اکونیوز</h6>
+                        <p>با این معجون‌ها چند روزه کبد خود را پاکسازی کنید</p>
+                    </div>
                 </div>
                 </div>
         </div>
@@ -3278,8 +3315,10 @@
                <div class="main-news-right col-12 col-md-4 col-lg-3 ">
                   <div class="content">
                     <div class="img-container"><div class="overflow-hidden position-relative"><img src="./images/special-news/12/R.jpg" class="img-fluid col-12"></div></div>
+                    <div class="text-container">
                     <p>چالش اصلی ایران در حوزه داروهای ضدسرطان</p>
-                  </div>
+                    </div>
+                </div>
                </div>
                <div class="news-thumbs col-lg-3 d-none d-lg-flex flex-column gap-1">
                    <div class="content">
@@ -3363,8 +3402,10 @@
                <div class="main-news-right col-12 col-md-4 col-lg-3 ">
                  <div class="content">
                     <div class="img-container"><div class="overflow-hidden position-relative"><img src="./images/special-news/13/R.jpg" class="img-fluid col-12"></div></div>
+                    <div class="text-container">
                     <p>ارزان ترین موبایل با تراشه اسنپ دراگون ۸Elit در راه بازار</p>
-                 </div>
+                    </div>
+                </div>
                </div>
                <div class="news-thumbs col-lg-3 d-none d-lg-flex flex-column gap-1">
                     <div class="content">
@@ -3413,7 +3454,9 @@
                <div class="main-news-left col-12 col-md-4 col-lg-3">
                 <div class="content">
                     <div class="img-container"><div class="overflow-hidden position-relative"><img src="./images/special-news/13/L.jpg" class="img-fluid col-12"></div></div>
+                    <div class="text-container">
                        <p>دیپ سیک چینی ناجی اپل آمریکایی میشود</p>
+                    </div>
                 </div>
                 </div>
         </div>
@@ -3447,8 +3490,10 @@
                <div class="main-news-right col-12 col-md-4 col-lg-3 ">
                    <div class="content">
                     <div class="img-container"><div class="overflow-hidden position-relative"><img src="./images/special-news/14/R.jpg" class="img-fluid col-12"></div></div>
+                    <div class="text-container">
                     <p>ترامپ برای کمک به اوکراین شرط گذاشت + فیلم</p>
-                   </div>
+                    </div>
+                </div>
                </div>
                <div class="news-thumbs col-lg-3 d-none d-lg-flex flex-column gap-1">
                     <div class="content">
@@ -3498,8 +3543,11 @@
                <div class="main-news-left col-12 col-md-4 col-lg-3">
                 <div class="content">
                     <div class="img-container"><div class="overflow-hidden position-relative"><img src="./images/special-news/14/L.jpg" class="img-fluid col-12"></div></div>
-                    <h6 class="text-muted mt-2 mb-0">جشن مردم سنندج درسالروز پیروزی انقلاب ؛</h6>
-                    <p>همه با هم برای سربلندی ایران +فیلم </p></div>
+                    <div class="text-container">
+                        <h6 class="text-muted mb-0">جشن مردم سنندج درسالروز پیروزی انقلاب ؛</h6>
+                        <p>همه با هم برای سربلندی ایران +فیلم </p>
+                    </div>
+                </div>
                 </div>
         </div>
      </section>
@@ -3701,7 +3749,7 @@
 
                 <div class="temp d-flex align-items-center">
  				    <div id="weather-image" class="w-25"><img src="https://econews.ir/themes/frontend/econews/img/weather/fog.png" class="img-fluid w-100"></div>
- 				    <div id="weather-info-2" class="weather-info fs-6 mt-1"><strong>دمای کنونی: 3 °</strong></div>
+ 				    <div id="weather-info-2" class="weather-info mt-1"><strong>دمای کنونی: 3 °</strong></div>
  			    </div>
                  
                  <div class="cities">
@@ -3810,7 +3858,7 @@
             <div class="col-12 col-md-5 d-flex align-items-center">
                 <form class="w-100 d-flex justify-content-center justify-content-md-end align-items-center">
                     <input class="h-50 text-center text-md-end me-0 me-md-5" type="text" placeholder="جستجو در سایت">
-                    <div class="serach-icon h-50 d-none d-md-block"><i class="fa-solid fa-magnifying-glass fs-5 mt-1"></i></div>
+                    <div class="serach-icon h-50 d-none d-md-flex align-items-center"><i class="fa-solid fa-magnifying-glass"></i></div>
                 </form>
             </div>
         </div>
@@ -3895,13 +3943,13 @@
             </div>
         <div class="bottom-section" style="background-image: linear-gradient(138deg,#080808,#232323);">
             <div class="container-fluid container-md row d-flex align-items-center">
-            <div class="col-12 col-lg-8 justify-content-center justify-content-lg-start align-items-center">
+            <div class="copy-right col-12 col-lg-8 justify-content-center justify-content-lg-start align-items-center">
                 <p class="footer-caption text-center text-lg-start d-flex flex-column flex-lg-row align-items-center" style="font-size: 14px;">
                     <a href="#"><img src="./images/logo.png" class="img-fluid me-2"></a>
                     کلیه حقوق مادی و معنوی این سایت متعلق به هلدینگ فرهنگی،اقتصادی و رسانه ای اکو می باشد و استفاده از مطالب با ذکر منبع بلامانع است 
                 </p>
             </div>
-            <div class="col-12 col-lg-4 d-flex justify-content-center justify-content-lg-end ">
+            <div class="ggl-translator col-12 col-lg-4 d-flex justify-content-center justify-content-lg-end ">
                 <div id="google_translate_element"></div>
             </div>
         </div>

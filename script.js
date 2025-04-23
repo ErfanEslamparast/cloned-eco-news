@@ -152,6 +152,32 @@ new Swiper(".myNewsSwiper", {
     speed: 800,
 });
 
+// change background of the advertising header when hover on each other
+const advertisingPassage = document.querySelector('.advertising-box .row .col-8');
+const advertisingPhone = document.querySelector('.advertising-box .row .col-4');
+const advertisingIcon = document.querySelector('.advertising-box .row .col-8 i');
+
+ 
+const changeColor = ()=>{
+    advertisingPassage.style.color = '#b71818';
+    advertisingPhone.style.color = '#b71818';
+    advertisingIcon.style.color = '#666';
+    
+}
+const restoreColor = ()=>{
+    advertisingPassage.style.color = '#666';
+    advertisingPhone.style.color = '#666';
+}
+advertisingPassage.addEventListener('mouseenter',changeColor)
+advertisingPhone.addEventListener('mouseenter',changeColor)
+
+//clear hovering
+
+advertisingPassage.addEventListener('mouseleave',restoreColor)
+advertisingPhone.addEventListener('mouseleave',restoreColor)
+
+
+
 });
 // google translate init
 function googleTranslateElementInit() {

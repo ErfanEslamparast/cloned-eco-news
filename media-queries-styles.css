@@ -29,11 +29,24 @@
         }
 }
 @media screen and (min-width: 991px) and (max-width: 1200px) {
+    .recent-news{
+        margin-top: -7px;
+    }
+    .advertising-box .trend-topics .tags{
+        height: 130px;
+    }
     .currencies .currencies-status .tab-content .tab-pane > ul{
        height: 255px;
    }
+   
    .converter{
     height: 331px;
+    }
+    .image-container .img-box .content{
+        height: auto;
+    }
+    footer .middle-section ul li a{
+        font-size: 12px;
     }
 }
 @media screen and (max-width: 991px) {
@@ -79,17 +92,19 @@
     .dropdown-menu {
         display: none;
         position: static;
+        padding: 9px 18px;
     }
     .dropdown-menu .container-md{
         max-width: 100%!important;
         width: 100%!important;
     }
-   
+    .dropdown-menu .container-md > .col-12{
+        padding: 0 8px;
+    }
     .dropdown-menu.flex .col-6{
         width: 50%;
     }
     .dropdown-menu.flex .col-6 .dropdown-item{
-        
         border-left: 1px solid #555;
         margin-bottom: 2px;
     }
@@ -100,11 +115,13 @@
     .dropdown.free-zones .dropdown-menu.show{
         display: flex;
         flex-wrap: wrap;
-        gap: 5px 1px ;
+        gap: 4px ;
     }
-    .dropdown.free-zones .dropdown-menu li{
-        background-color:#fff;
-        border-radius: .5rem;
+    .dropdown .dropdown-menu ul li{
+        margin: 4px 0;
+    }
+    .free-zones .dropdown-menu li{
+        margin: 0;
     }
     .dropdown.proviences .dropdown-menu ul li,
     .dropdown.free-zones .dropdown-menu li,
@@ -123,24 +140,54 @@
     .advertising-box .trend-topics .tags{
         height: 194px;
     }
+    /* news section */
+    section.news .news-top .advertising-box > .row{bottom: -6px;}
+
     /* Currencies Section */
     .currencies .currencies-status .tab-content .tab-pane > ul{
-        height: 255px;
+        height: 199px;
     }
     .converter{
-        height: 323px;
+        height: 310px;
     }
+    .small-news-container .small-news-box .news{
+        font-size: 14px;
+    }
+    .small-news-container .small-news-box .news h6{
+     font-size: 13px!important;
+    }
+    /* advertising gifs */
+    .adv-banner-container{
+     gap: 10px;
+     margin-bottom: 20px;
+    }
+    
     /* Special News Section */
     .special-news .news-container {
-        height: 16.8rem;
+        height: auto;
     }
     .special-news .news-container > *{
         width: 32%;
         padding: 0;
     }
+    .special-news .news-container > * .content{ height: 230px;}
+    .special-news .header .header-list ul{
+        width: 420px;
+    }
+    .special-news .news-container .main-news-right,
+    .special-news .news-container .main-news-left{
+        font-size: 19px;
+        line-height: 21px;
+    }
+    .special-news .news-container .main-news-right .content .img-container,
+.special-news .news-container .main-news-left .content .img-container{
+    padding: 3px;
+    padding-bottom: 0;
+}
      .special-news .news-container .news-list{
         height: 100%;
         overflow: hidden;
+        font-size: 15px;
      }
      .special-news.proviences{
         height: 1178px ;
@@ -148,10 +195,23 @@
     .special-news.proviences .col-md-8{width: 65%;}
      .special-news.proviences .main-news-left{width: 100%;}
      /* نیازمندی‌ها */
+     .image-container .img-box .content{
+        height: auto;
+     }
      .image-container .img-box:after{
         font-size: .8rem;
      }
+     footer .middle-section .socials .social-icon{
+        margin: 0 2px;
+     }
+     footer .middle-section ul li a{
+        font-size: 12px;
+    }
+    footer .bottom-section .ggl-translator{
+        margin-bottom: 15px;
+    } 
 }
+
 @media screen and (max-width: 768px) {
  /* Top Menu */
  .sliding-menu-container{
@@ -161,7 +221,14 @@
  section.news .news-middle .right-side .main-news .news-title{
      font-size: 90%;
  }
+ /* advertising box */
+ .advertising-box .adv-banner img{
+    width: auto!important;
+}
  /* Currencies Section */
+ .currencies{
+    padding: 0 8px;
+ } 
  .currencies .currencies-status .tab-content .tab-pane{
      font-size: 14px;
  }
@@ -169,6 +236,20 @@
      height: 200px;
      margin-bottom: 8px;
  }
+ .converter{
+    height: auto;
+ }
+ .small-news-container .small-news-box .news{
+    font-size: 16px;
+}
+.small-news-container .small-news-box .news h6{
+ font-size: 15px!important;
+}
+/* advertising gifs */
+.adv-banner-container{
+    gap: 10px 0;
+    margin-bottom: 22px;
+}
  /* Special News Section */
  .special-news .news-container{
     height: auto;
@@ -187,6 +268,7 @@
       flex-wrap: nowrap;
 }
 .special-news .news-container > *{width: 100%;}
+
 .special-news.proviences{
     height: auto ;
 } 
@@ -204,5 +286,8 @@ footer .middle-section ul li a{
 }
 footer .middle-section .col-md-2{
     width: 49%;
+}
+footer .middle-section ul li a{
+    font-size: 14px;
 }
 }
